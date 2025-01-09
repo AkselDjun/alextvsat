@@ -3,14 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const Styles = createGlobalStyle`
 
     @font-face {
-        font-family: "Motiva Sans Light";
-        src: url("/fonts/Motiva-Sans-Light.ttf") format("truetype");
+        font-family: "Roboto Light";
+        src: url("/fonts/Roboto-Light.ttf") format("truetype");
         font-style: normal;
     }
 
     @font-face {
-        font-family: "Motiva Sans Bold";
-        src: url("/fonts/Motiva-Sans-Bold.ttf") format("truetype");
+        font-family: "Roboto Bold";
+        src: url("/fonts/Roboto-Bold.ttf") format("truetype");
         font-style: normal;
     }
 
@@ -18,7 +18,7 @@ export const Styles = createGlobalStyle`
     body,
     html,
     a {
-        font-family: 'Motiva Sans Light', sans-serif;
+        font-family: 'Roboto Light', sans-serif;
     }
 
 
@@ -57,24 +57,24 @@ export const Styles = createGlobalStyle`
     h4,
     h5,
     h6 {
-        font-family: 'Motiva Sans Bold', serif;
+        font-family: 'Roboto Bold', serif;
         color: #18216d;
-        font-size: 56px;
+        font-size: 52px;
         line-height: 1.18;
 
         @media only screen and (max-width: 890px) {
-          font-size: 47px;
+          font-size: 43px;
         }
       
         @media only screen and (max-width: 414px) {
-          font-size: 32px;
+          font-size: 28px;
         }
     }
 
     p {
         color: #18216d;
-        font-size: 21px;        
-        line-height: 1.41;
+        font-size: 18px;        
+        line-height: 1.4;
     }
 
     h1 {

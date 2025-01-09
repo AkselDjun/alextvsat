@@ -42,13 +42,13 @@ const ContentBlock = ({
           id={id}
           direction={direction}
         >
-          <Col lg={11} md={11} sm={12} xs={24}>
+          <Col lg={10} md={11} sm={12} xs={24}>
             <SvgIcon src={icon} width="100%" height="100%" />
           </Col>
-          <Col lg={11} md={11} sm={11} xs={24}>
+          <Col lg={10} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
+              <h6>{title}</h6>
+              <Content>{content}</Content>
               {direction === "right" ? (
                 <ButtonWrapper>
                   {typeof button === "object" &&
@@ -57,6 +57,7 @@ const ContentBlock = ({
                         item: {
                           color?: string;
                           title: string;
+                          scrollTo: string;
                         },
                         id: number
                       ) => {
@@ -64,9 +65,9 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => scrollTo(item.scrollTo)}
                           >
-                            {t(item.title)}
+                            {item.title}
                           </Button>
                         );
                       }
@@ -86,7 +87,7 @@ const ContentBlock = ({
                           id: number
                         ) => {
                           return (
-                            <Col key={id} span={11}>
+                            <Col key={id} span={10}>
                               <SvgIcon
                                 src={item.icon}
                                 width="60px"

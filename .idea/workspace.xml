@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="" />
+    <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/linkedin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/telephone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/medium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/viber.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/telegram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Container/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Container/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/TextArea/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TextArea/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/TextArea/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TextArea/styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/useForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/useForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/validationRules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/validationRules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +54,7 @@
     "npm.build (1).executor": "Run",
     "npm.build.executor": "Run",
     "npm.develop.executor": "Run",
+    "npm.serve.executor": "Run",
     "npm.start (1).executor": "Run",
     "npm.start (2).executor": "Run",
     "npm.start.executor": "Run",
@@ -74,11 +95,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/gatsby-starter-default/package.json" />
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="serve" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -97,10 +118,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build (1)" />
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.start (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +143,9 @@
       <workItem from="1736361475913" duration="2404000" />
       <workItem from="1736364485390" duration="447000" />
       <workItem from="1736364973677" duration="417000" />
-      <workItem from="1736422510752" duration="6498000" />
+      <workItem from="1736422510752" duration="13814000" />
+      <workItem from="1736440383026" duration="365000" />
+      <workItem from="1736441248035" duration="12807000" />
     </task>
     <servers />
   </component>

@@ -11,11 +11,13 @@ export interface ContentBlockProps {
   button?: (
     | {
         title: string;
+        scrollTo: string,
         color?: undefined;
       }
     | {
         title: string;
         color: string;
+        scrollTo: string,
       }
   )[];
   t: TFunction;

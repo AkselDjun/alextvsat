@@ -1,4 +1,6 @@
 import { TFunction } from "react-i18next";
+import { CSSProperties } from "styled-components"
+
 export interface ContainerProps {
   border?: boolean;
   children: React.ReactNode;
@@ -17,12 +19,18 @@ export interface SvgIconProps {
   height: string;
 }
 
+export interface IconProps {
+  src: string;
+  style: CSSProperties;
+}
+
 export interface InputProps {
   name: string;
   placeholder: string;
   t: TFunction;
   type?: string;
   value?: string;
+  label?: string;
   onChange: (
     event:
       | React.ChangeEvent<HTMLInputElement>
@@ -32,5 +40,5 @@ export interface InputProps {
 export interface validateProps {
   name: string;
   message: string;
-  email: string;
+  phone: string;
 }
