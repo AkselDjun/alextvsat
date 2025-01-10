@@ -18,19 +18,6 @@ export const NavLink = styled("div")`
   text-align: center;
 `;
 
-export const CustomNavLink = styled("div")`
-  width: 203px;
-  display: inline-block;
-
-  @media only screen and (max-width: 411px) {
-    width: 150px;
-  }
-
-  @media only screen and (max-width: 320px) {
-    width: 118px;
-  }
-`;
-
 export const Burger = styled("div")`
   @media only screen and (max-width: 890px) {
     display: block;
@@ -47,12 +34,6 @@ export const NotHidden = styled("div")`
   @media only screen and (max-width: 890px) {
     display: none;
   }
-`;
-
-export const Menu = styled("h5")`
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
 `;
 
 export const CustomNavLinkSmall = styled(NavLink)`

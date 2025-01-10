@@ -34,6 +34,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
     try {
+      if (Object.values(errors).every((error) => error === "")) {
       const response = await axios.post(url, {
         chat_id: chatId,
         text: `Имя: ${values.name}\nТелефон: ${values.phone}\nСообщение: ${values.message}`,
@@ -41,8 +42,8 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
 
       if (!response) {
         notification["error"]({
-          message: "Error",
-          description: "There was an error sending your message, please try again later.",
+          message: "Ошибка",
+          description: "При отправке сообщения произошла ошибка, повторите попытку позже.",
         });
       } else {
         event.target.reset();
@@ -50,49 +51,18 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
           values: { ...initialValues },
           errors: { ...initialValues },
         }));
+
+        notification["success"]({
+          message: "Успешно",
+          description: "Ваше сообщение отправлено!",
+        });
+      }
     }} catch (error) {
       notification["error"]({
-        message: "Error",
-        description: "Failed to submit form. Please try again later.",
+        message: "Ошибка",
+        description: "Не удалось отправить форму. Пожалуйста, повторите попытку позже.",
       });
     }
-
-    // const url = "http://localhost:3000/send_form.php";
-    //
-    // try {
-    //   if (Object.values(errors).every((error) => error === "")) {
-    //     const response = await fetch(url, {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(values),
-    //     });
-    //
-    //     if (!response.ok) {
-    //       notification["error"]({
-    //         message: "Error",
-    //         description: "There was an error sending your message, please try again later.",
-    //       });
-    //     } else {
-    //       event.target.reset();
-    //       setFormState(() => ({
-    //         values: { ...initialValues },
-    //         errors: { ...initialValues },
-    //       }));
-    //
-    //       notification["success"]({
-    //         message: "Success",
-    //         description: "Your message has been sent!",
-    //       });
-    //     }
-    //   }
-    // } catch (error) {
-    //   notification["error"]({
-    //     message: "Error",
-    //     description: "Failed to submit form. Please try again later.",
-    //   });
-    // }
   };
 
   const handleChange = (

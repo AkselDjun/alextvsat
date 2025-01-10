@@ -1,4 +1,4 @@
-import { Col, Timeline } from "antd"
+import { Col, List } from "antd"
 import { Fade } from "react-awesome-reveal";
 import React from 'react';
 
@@ -11,7 +11,25 @@ import {
   StyledRow,
   ButtonWrapper,
 } from "./styles";
+import { Icon } from "../../common/Icon"
 
+const data = [
+  {
+    icon: "clock",
+    title: "Быстрое и качественное обслуживание",
+    description: "Мы гарантируем быстрое и эффективное выполнение всех работ. Наши специалисты всегда готовы приехать в удобное для вас время и быстро решить любые проблемы с антеннами и телевизорами.",
+  },
+  {
+    icon: "dollar",
+    title: "Доступные цены и гарантия на работы",
+    description: "Мы предлагаем конкурентоспособные цены на все наши услуги без скрытых платежей. Кроме того, мы предоставляем гарантию на все выполненные работы, чтобы вы могли быть уверены в качестве наших услуг.",
+  },
+  {
+    icon: "smile",
+    title: "Персонализированный подход к каждому клиенту",
+    description: "Мы ценим каждого клиента и стараемся предоставить индивидуальный подход к решению всех ваших проблем с телевизионной техникой. Ваше удовлетворение — наш приоритет.",
+  }
+]
 
 const ContentBlock = ({
   icon,
@@ -37,7 +55,7 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={10} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width={id === "intro" ? "80%" : "100%"} height={id === "intro" ? "80%" : "100%"} />
+            <SvgIcon src={icon} width={id === "intro" ? "70%" : "90%"} height={id === "intro" ? "70%" : "90%"} />
           </Col>
           <Col lg={10} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -68,20 +86,19 @@ const ContentBlock = ({
                 </ButtonWrapper>
               )}
               {id === "about" && (
-                <Timeline>
-                  <Timeline.Item color="#18216d">
-                    <p>Более 20 лет опыта работы</p>
-                  </Timeline.Item>
-                  <Timeline.Item color="#18216d">
-                    <p>Быстрое и качественное обслуживание</p>
-                  </Timeline.Item>
-                  <Timeline.Item color="#18216d">
-                    <p>Доступные цены и гарантия на работы</p>
-                  </Timeline.Item>
-                  <Timeline.Item color="#18216d">
-                    <p>Персонализированный подход к каждому клиенту</p>
-                  </Timeline.Item>
-                </Timeline>
+                <List
+                  itemLayout="horizontal"
+                  dataSource={data}
+                  renderItem={(item, index) => (
+                    <List.Item>
+                      <List.Item.Meta
+                        avatar={<Icon src={item.icon} />}
+                        title={<p>{item.title}</p>}
+                        description={item.description}
+                      />
+                    </List.Item>
+                  )}
+                />
               )}
             </ContentWrapper>
           </Col>

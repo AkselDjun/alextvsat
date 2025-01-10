@@ -3,7 +3,7 @@ import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection } from "./styles";
 import React from "react"
-import { Icon } from "../../common/Icon"
+import { SvgIcon } from "../../common/SvgIcon"
 
 interface MiddleBlockProps {
   title: string;
@@ -50,8 +50,7 @@ const MiddleBlock = () => {
               <Card
                 hoverable
                 size="default"
-                bodyStyle={{ margin: "20px" }}
-                cover={<Icon src={icon} style={{ height: '100px', objectFit: 'contain' }} />}
+                cover={<SvgIcon src={`${icon}.svg`} width="150px" height="150px" />}
               >
                 <Card.Meta
                   title={<p>{title}</p>}

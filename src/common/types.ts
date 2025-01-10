@@ -20,7 +20,7 @@ export interface SvgIconProps {
 
 export interface IconProps {
   src: string;
-  style: CSSProperties;
+  style?: CSSProperties;
 }
 
 export interface InputProps {

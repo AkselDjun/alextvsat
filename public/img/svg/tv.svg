@@ -1,0 +1,38 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 400 300"
+        width="400"
+        height="300"
+>
+    <!-- Фон телевизора -->
+    <rect x="50" y="50" width="300" height="200" rx="10" ry="10" fill="#1d1d1d" />
+    <rect x="60" y="60" width="280" height="180" rx="5" ry="5" fill="#333" />
+
+    <!-- Экран -->
+    <rect x="70" y="70" width="260" height="160" rx="5" ry="5" fill="#d1d1d1" />
+
+    <!-- Рука -->
+    <path
+            d="M140 210 C120 210, 110 240, 130 250 L160 260 C170 265, 185 260, 182 240 L175 220 Z"
+            fill="#f5c8a1"
+    />
+
+    <!-- Пульт -->
+    <rect
+            x="150"
+            y="200"
+            width="80"
+            height="30"
+            rx="5"
+            ry="5"
+            fill="#222"
+    />
+    <!-- Кнопки пульта -->
+    <circle cx="170" cy="215" r="3" fill="#d1d1d1" />
+    <circle cx="190" cy="215" r="3" fill="#d1d1d1" />
+    <circle cx="210" cy="215" r="3" fill="#d1d1d1" />
+
+    <!-- Подставка телевизора -->
+    <rect x="150" y="260" width="100" height="10" fill="#444" rx="2" ry="2" />
+    <rect x="175" y="270" width="50" height="10" fill="#333" rx="2" ry="2" />
+</svg>

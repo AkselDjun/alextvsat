@@ -6,23 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/TextArea/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TextArea/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/icons/broken-tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/icons/satelite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/icons/tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/developer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/graphs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/graphs.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Container/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Container/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Block/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Block/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/useForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/useForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en/translation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/es/translation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/ru/translation.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/translation.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.json" beforeDir="false" afterPath="$PROJECT_DIR$/template.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +140,7 @@
       <workItem from="1736422510752" duration="13814000" />
       <workItem from="1736440383026" duration="365000" />
       <workItem from="1736441248035" duration="12807000" />
-      <workItem from="1736497518361" duration="17938000" />
+      <workItem from="1736497518361" duration="21515000" />
     </task>
     <servers />
   </component>
