@@ -1,4 +1,3 @@
-import { TFunction } from "react-i18next";
 import { CSSProperties } from "styled-components"
 
 export interface ContainerProps {
@@ -27,7 +26,6 @@ export interface IconProps {
 export interface InputProps {
   name: string;
   placeholder: string;
-  t: TFunction;
   type?: string;
   value?: string;
   label?: string;

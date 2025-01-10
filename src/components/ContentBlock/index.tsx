@@ -1,6 +1,5 @@
 import { Col, Timeline } from "antd"
 import { Fade } from "react-awesome-reveal";
-import { withTranslation } from "react-i18next";
 import React from 'react';
 
 import { ContentBlockProps } from "./types";
@@ -27,8 +26,6 @@ const ContentBlock = ({
       behavior: "smooth",
     });
   };
-
-  const items = { children: 'sample', label: 'sample' };
 
   return (
     <ContentSection>
@@ -94,4 +91,4 @@ const ContentBlock = ({
   );
 };
 
-export default withTranslation()(ContentBlock);
+export default ContentBlock;

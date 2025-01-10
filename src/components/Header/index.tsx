@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
-import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -9,14 +8,13 @@ import {
   LogoContainer,
   Burger,
   NotHidden,
-  Menu,
   CustomNavLinkSmall,
   Label,
   Outline,
   Span,
 } from "./styles";
 
-const Header = ({ t }: { t: TFunction }) => {
+const Header = () => {
   const [visible, setVisibility] = useState(false);
 
   const toggleButton = () => {
@@ -80,4 +78,4 @@ const Header = ({ t }: { t: TFunction }) => {
   );
 };
 
-export default withTranslation()(Header);
+export default Header;

@@ -1,7 +1,5 @@
 import { Row, Col, List } from "antd"
-import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
-import { ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
 import validate from "../../common/utils/validationRules";
 import { Button } from "../../common/Button";
@@ -10,6 +8,10 @@ import Input from "../../common/Input";
 import { SvgIcon } from "../../common/SvgIcon";
 import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer } from "./styles";
+
+export interface ValidationTypeProps {
+  type: string;
+}
 
 const data = [
   {
@@ -119,4 +121,4 @@ const Contact = () => {
   );
 };
 
-export default withTranslation()(Contact);
+export default Contact;

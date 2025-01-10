@@ -1,8 +1,7 @@
 import { Row, Col, Card } from "antd"
-import { withTranslation } from "react-i18next";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
-import { MiddleBlockSection, Content } from "./styles";
+import { MiddleBlockSection } from "./styles";
 import React from "react"
 import { Icon } from "../../common/Icon"
 
@@ -73,4 +72,4 @@ const MiddleBlock = () => {
   );
 };
 
-export default withTranslation()(MiddleBlock);
+export default MiddleBlock;
