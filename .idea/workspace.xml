@@ -6,24 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/github.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/linkedin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/telephone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/medium.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/viber.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/telegram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Container/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Container/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/TextArea/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TextArea/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/TextArea/styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/TextArea/styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/useForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/useForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/utils/validationRules.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/validationRules.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/svg/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/novo-castle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/spain.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/telephone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/united-states.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Block/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Block/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/styles.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/ContactContent.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,29 +42,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "last_opened_file_path": "D:/projects/alextvsat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build (1).executor": "Run",
-    "npm.build.executor": "Run",
-    "npm.develop.executor": "Run",
-    "npm.serve.executor": "Run",
-    "npm.start (1).executor": "Run",
-    "npm.start (2).executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.start:refresh.executor": "Run",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "D:\\projects\\alextvsat\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/alextvsat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.develop.executor&quot;: &quot;Run&quot;,
+    &quot;npm.serve.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.start (2).executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start:refresh.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\alextvsat\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.start">
     <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -146,6 +147,7 @@
       <workItem from="1736422510752" duration="13814000" />
       <workItem from="1736440383026" duration="365000" />
       <workItem from="1736441248035" duration="12807000" />
+      <workItem from="1736497518361" duration="17329000" />
     </task>
     <servers />
   </component>

@@ -33,14 +33,11 @@ const Header = ({ t }: { t: TFunction }) => {
     };
     return (
       <>
+        <CustomNavLinkSmall onClick={() => scrollTo("services")}>
+          <Span>Услуги</Span>
+        </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <Span>О нас</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("mission")}>
-          <Span>Миссия</Span>
-        </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("product")}>
-          <Span>Продукт</Span>
+          <Span>Наши преимущества</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
@@ -59,7 +56,7 @@ const Header = ({ t }: { t: TFunction }) => {
       <Container>
         <Row justify="space-between">
           <LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" width="101px" height="64px" />
+            <SvgIcon src="logo.svg" width="200px" height="160px" />
           </LogoContainer>
           <NotHidden>
             <MenuItem />
@@ -71,9 +68,6 @@ const Header = ({ t }: { t: TFunction }) => {
         <Drawer closable={false} open={visible} onClose={toggleButton}>
           <Col style={{ marginBottom: "2.5rem" }}>
             <Label onClick={toggleButton}>
-              <Col span={12}>
-                <Menu>Menu</Menu>
-              </Col>
               <Col span={12}>
                 <Outline />
               </Col>

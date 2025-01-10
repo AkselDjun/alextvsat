@@ -43,11 +43,11 @@ const MiddleBlock = () => {
   };
 
   return (
-    <MiddleBlockSection>
+    <MiddleBlockSection id="services">
       <Slide direction="up" triggerOnce>
-        <Row id="middle" justify="space-between" align="middle">
+        <Row id="services" justify="space-between" align="middle">
           {data.map(({title, content, button, icon}, index) => (
-            <Col lg={8} md={8} sm={24} xs={24} id={index.toString()}>
+            <Col lg={7} md={7} sm={24} xs={24} id={index.toString()}>
               <Card
                 hoverable
                 size="default"
@@ -55,8 +55,9 @@ const MiddleBlock = () => {
                 cover={<Icon src={icon} style={{ height: '100px', objectFit: 'contain' }} />}
               >
                 <Card.Meta
-                  title={title}
+                  title={<p>{title}</p>}
                   description={content}
+                  style={{ justifyContent: "center" }}
                 />
                 {button && (
                   <Button name="submit" onClick={() => scrollTo("contact")}>

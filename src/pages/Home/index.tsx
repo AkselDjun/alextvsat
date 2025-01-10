@@ -2,7 +2,6 @@ import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
-import ContactContent from "../../content/ContactContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -19,7 +18,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="novo-castle.jpg"
+        icon="novogrudok.svg"
         id="intro"
       />
       <MiddleBlock />
@@ -31,18 +30,14 @@ const Home = () => {
         icon="graphs.svg"
         id="about"
       />
-      <ContentBlock
-        direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
-        icon="product-launch.svg"
-        id="mission"
-      />
-      <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      />
+      {/*<ContentBlock*/}
+      {/*  direction="right"*/}
+      {/*  title={MissionContent.title}*/}
+      {/*  content={MissionContent.text}*/}
+      {/*  icon="product-launch.svg"*/}
+      {/*  id="mission"*/}
+      {/*/>*/}
+      <Contact />
     </Container>
   );
 };

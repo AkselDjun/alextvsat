@@ -1,19 +1,18 @@
-import { withTranslation, TFunction } from "react-i18next";
+import { withTranslation } from "react-i18next";
 import { Container, TextWrapper, Content } from "./styles";
 
 interface Props {
   title: string;
-  content: string;
-  t: TFunction;
+  content?: string;
 }
 
-const Block = ({ title, content, t }: Props) => {
+const Block = ({ title, content }: Props) => {
   return (
     <Container>
-      <h6>{t(title)}</h6>
-      <TextWrapper>
-        <Content>{t(content)}</Content>
-      </TextWrapper>
+      <h6>{title}</h6>
+      {content && (<TextWrapper>
+        <Content>{content}</Content>
+      </TextWrapper>)}
     </Container>
   );
 };

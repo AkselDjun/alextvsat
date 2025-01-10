@@ -1,28 +1,23 @@
-import { Row, Col } from "antd";
+import { Col, Timeline } from "antd"
 import { Fade } from "react-awesome-reveal";
 import { withTranslation } from "react-i18next";
+import React from 'react';
 
 import { ContentBlockProps } from "./types";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
 import {
   ContentSection,
-  Content,
   ContentWrapper,
-  ServiceWrapper,
-  MinTitle,
-  MinPara,
   StyledRow,
   ButtonWrapper,
 } from "./styles";
 
+
 const ContentBlock = ({
   icon,
   title,
-  content,
-  section,
   button,
-  t,
   id,
   direction,
 }: ContentBlockProps) => {
@@ -32,6 +27,8 @@ const ContentBlock = ({
       behavior: "smooth",
     });
   };
+
+  const items = { children: 'sample', label: 'sample' };
 
   return (
     <ContentSection>
@@ -43,13 +40,12 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={10} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <SvgIcon src={icon} width={id === "intro" ? "80%" : "100%"} height={id === "intro" ? "80%" : "100%"} />
           </Col>
           <Col lg={10} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h6>{title}</h6>
-              <Content>{content}</Content>
-              {direction === "right" ? (
+              {direction === "right" && (
                 <ButtonWrapper>
                   {typeof button === "object" &&
                     button.map(
@@ -73,34 +69,22 @@ const ContentBlock = ({
                       }
                     )}
                 </ButtonWrapper>
-              ) : (
-                <ServiceWrapper>
-                  <Row justify="space-between">
-                    {typeof section === "object" &&
-                      section.map(
-                        (
-                          item: {
-                            title: string;
-                            content: string;
-                            icon: string;
-                          },
-                          id: number
-                        ) => {
-                          return (
-                            <Col key={id} span={10}>
-                              <SvgIcon
-                                src={item.icon}
-                                width="60px"
-                                height="60px"
-                              />
-                              <MinTitle>{t(item.title)}</MinTitle>
-                              <MinPara>{t(item.content)}</MinPara>
-                            </Col>
-                          );
-                        }
-                      )}
-                  </Row>
-                </ServiceWrapper>
+              )}
+              {id === "about" && (
+                <Timeline>
+                  <Timeline.Item color="#18216d">
+                    <p>Более 20 лет опыта работы</p>
+                  </Timeline.Item>
+                  <Timeline.Item color="#18216d">
+                    <p>Быстрое и качественное обслуживание</p>
+                  </Timeline.Item>
+                  <Timeline.Item color="#18216d">
+                    <p>Доступные цены и гарантия на работы</p>
+                  </Timeline.Item>
+                  <Timeline.Item color="#18216d">
+                    <p>Персонализированный подход к каждому клиенту</p>
+                  </Timeline.Item>
+                </Timeline>
               )}
             </ContentWrapper>
           </Col>
