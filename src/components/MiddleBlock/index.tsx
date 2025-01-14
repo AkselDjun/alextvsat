@@ -1,18 +1,45 @@
-import { Row, Col, Card } from "antd"
+import { Row, Col, Card } from "antd";
 import { Slide } from "react-awesome-reveal";
 import { Button } from "../../common/Button";
 import { MiddleBlockSection } from "./styles";
-import React from "react"
-import { SvgIcon } from "../../common/SvgIcon"
+import React from "react";
+import { SvgIcon } from "../../common/SvgIcon";
+import styled from "styled-components";
 
-interface MiddleBlockProps {
-  title: string;
-  content: string;
-  button: string;
-  icon: string;
-}
+const StyledCard = styled(Card)`
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  .ant-card-meta-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .ant-card-meta-description {
+    font-size: 14px;
+    color: #555;
+  }
+`;
 
-const data: MiddleBlockProps[] = [
+const StyledButton = styled(Button)`
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  &:hover {
+    background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+`;
+
+const data = [
   {
     title: "Установка спутниковых и эфирных антенн",
     content: "Монтаж и настройка спутниковых и эфирных антенн для надежного сигнала в любых условиях.",
@@ -27,7 +54,7 @@ const data: MiddleBlockProps[] = [
   },
   {
     title: "Настройка телевизионных каналов",
-    content: "Диагностика и профессиональный ремонт современных моделей телевизоров любых марок с гарантией.",
+    content: "Диагностика и профессиональный ремонт современных моделей телевизоров любых марок.",
     button: "Заказать ремонт",
     icon: 'tv',
   }
@@ -44,27 +71,23 @@ const MiddleBlock = () => {
   return (
     <MiddleBlockSection id="services">
       <Slide direction="up" triggerOnce>
-        <Row id="services" justify="space-between" align="middle">
-          {data.map(({title, content, button, icon}, index) => (
-            <Col lg={7} md={7} sm={24} xs={24} id={index.toString()}>
-              <Card
+        <Row justify="space-between" align="middle" gutter={[32, 32]}>
+          {data.map(({ title, content, button, icon }, index) => (
+            <Col lg={7} md={7} sm={24} xs={24} key={index}>
+              <StyledCard
                 hoverable
                 size="default"
                 cover={<SvgIcon src={`${icon}.svg`} width="150px" height="150px" />}
               >
-                <Card.Meta
-                  title={<p>{title}</p>}
-                  description={content}
-                  style={{ justifyContent: "center" }}
-                />
-                {button && (
-                  <Button name="submit" onClick={() => scrollTo("contact")}>
-                    {button}
-                  </Button>
-                )}
-              </Card>
+                <div style={{ textAlign: "center" }}>
+                  <Card.Meta title={title} description={content} />
+                  {button && (
+                    <StyledButton onClick={() => scrollTo("contact")}>{button}</StyledButton>
+                  )}
+                </div>
+              </StyledCard>
             </Col>
-          ))}
+            ))}
         </Row>
       </Slide>
     </MiddleBlockSection>

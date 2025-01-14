@@ -1,20 +1,21 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
 import AboutContent from "../../content/AboutContent.json";
-import MissionContent from "../../content/MissionContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
+const HeaderBlock = lazy(() => import("../../components/HeaderBlock"));
+const ReviewsBlock = lazy(() => import("../../components/ReviewsBlock"));
 
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <ContentBlock
-        direction="right"
+      <HeaderBlock
+        direction="up"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
@@ -27,16 +28,10 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="people.svg"
         id="about"
       />
-      {/*<ContentBlock*/}
-      {/*  direction="right"*/}
-      {/*  title={MissionContent.title}*/}
-      {/*  content={MissionContent.text}*/}
-      {/*  icon="product-launch.svg"*/}
-      {/*  id="mission"*/}
-      {/*/>*/}
+      <ReviewsBlock />
       <Contact />
     </Container>
   );

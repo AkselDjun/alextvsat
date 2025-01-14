@@ -20,5 +20,5 @@ export interface ContentBlockProps {
       }
   )[];
   id: string;
-  direction: "left" | "right";
+  direction: "left" | "right" | "up";
 }
