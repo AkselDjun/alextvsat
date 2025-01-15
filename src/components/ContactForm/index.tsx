@@ -89,7 +89,7 @@ const Contact = () => {
             </FormGroup>
           </Slide>
         </Col>
-        <Col lg={10} md={12} sm={24} xs={24}>
+        <Col lg={10} md={12} sm={24} xs={24} style={{ paddingTop: "4rem" }}>
           <Slide direction="right" triggerOnce>
             <Block title="Мои контакты" />
             <List

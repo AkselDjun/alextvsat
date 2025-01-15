@@ -37,7 +37,7 @@ const ReviewCard = ({ name, avatar, rating, comment, date }: any) => (
 
 const ReviewsBlock = () => (
   <ReviewsSection>
-    <Slide direction="up" triggerOnce>
+    <Slide direction="right" triggerOnce>
       <h6 style={{ textAlign: 'center', marginBottom: 26 }}>Отзывы клиентов</h6>
       <Row gutter={[64, 64]}>
         {reviews.map((review, index) => (

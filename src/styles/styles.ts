@@ -27,8 +27,10 @@ export const Styles = createGlobalStyle`
         padding:0;
         border: 0;
         outline: 0;
-        background: #fff;
         overflow-x: hidden;
+        background-color: #f9f9f9;
+        background-image: radial-gradient(#ddd 1px, transparent 1px);
+        background-size: 20px 20px;
     }
 
     a:hover {
