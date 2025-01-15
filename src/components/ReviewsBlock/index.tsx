@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Rate, Row, Col } from 'antd';
 import { ReviewsSection } from "./styles"
+import { Slide } from "react-awesome-reveal"
 
 const reviews = [
   {
@@ -36,14 +37,16 @@ const ReviewCard = ({ name, avatar, rating, comment, date }: any) => (
 
 const ReviewsBlock = () => (
   <ReviewsSection>
-    <h6 style={{ textAlign: 'center' }}>Отзывы клиентов</h6>
-    <Row gutter={[64, 64]}>
-      {reviews.map((review, index) => (
-        <Col xs={24} sm={12} md={8} key={index}>
-          <ReviewCard {...review} />
-        </Col>
-      ))}
-    </Row>
+    <Slide direction="up" triggerOnce>
+      <h6 style={{ textAlign: 'center', marginBottom: 26 }}>Отзывы клиентов</h6>
+      <Row gutter={[64, 64]}>
+        {reviews.map((review, index) => (
+          <Col xs={24} sm={12} md={8} key={index}>
+            <ReviewCard {...review} />
+          </Col>
+        ))}
+      </Row>
+    </Slide>
   </ReviewsSection>
 );
 

@@ -42,7 +42,7 @@ const Header = () => {
           onClick={() => scrollTo("contact")}
         >
           <Span>
-            <Button>Свзяаться со мной</Button>
+            <Button>Связаться со мной</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
