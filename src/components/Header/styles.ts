@@ -38,7 +38,7 @@ export const NotHidden = styled("div")`
   }
 `;
 
-export const CustomNavLinkSmall = styled(NavLink)`
+export const CustomNavLinkSmall = styled("div")`
   font-size: 1.2rem;
   color: #18216d;
   transition: color 0.2s ease-in;
