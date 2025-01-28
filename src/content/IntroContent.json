@@ -5,11 +5,6 @@
     {
       "title": "Связаться со мной",
       "scrollTo": "contact"
-    },
-    {
-      "title": "Подробнее",
-      "color": "#fff",
-      "scrollTo": "about"
     }
   ]
 }

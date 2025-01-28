@@ -8,7 +8,6 @@ const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 const HeaderBlock = lazy(() => import("../../components/HeaderBlock"));
-const ReviewsBlock = lazy(() => import("../../components/ReviewsBlock"));
 
 const Home = () => {
   return (
@@ -22,7 +21,6 @@ const Home = () => {
         icon="novogrudok.svg"
         id="intro"
       />
-      <MiddleBlock />
       <ContentBlock
         direction="left"
         title={AboutContent.title}
@@ -31,7 +29,7 @@ const Home = () => {
         icon="people.svg"
         id="about"
       />
-      <ReviewsBlock />
+      <MiddleBlock />
       <Contact />
     </Container>
   );
