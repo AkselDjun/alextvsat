@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const MiddleBlockSection = styled("section")`
   position: relative;
   padding: 7.5rem 0 3rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  //text-align: center;
+  //display: flex;
+  //justify-content: center;
 
   @media screen and (max-width: 1024px) {
     padding: 5.5rem 0 3rem;

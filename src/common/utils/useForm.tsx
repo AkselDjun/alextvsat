@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { notification } from "antd";
+import axios from "axios"
 
 interface IValues {
   name: string;
-  email: string;
+  phone: string;
   message: string;
 }
 
 const initialValues: IValues = {
   name: "",
-  email: "",
+  phone: "",
   message: "",
 };
 
@@ -28,41 +29,38 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    const botToken = '7583528133:AAGsYAzoMPzbL472dCgSH6Cz8-0h3h8coYo';
+    const chatId = '429954390';
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
+      const response = await axios.post(url, {
+        chat_id: chatId,
+        text: `Имя: ${values.name}\nТелефон: ${values.phone}\nСообщение: ${values.message}`,
+      });
+
+      if (!response) {
+        notification["error"]({
+          message: "Ошибка",
+          description: "При отправке сообщения произошла ошибка, повторите попытку позже.",
         });
+      } else {
+        event.target.reset();
+        setFormState(() => ({
+          values: { ...initialValues },
+          errors: { ...initialValues },
+        }));
 
-        if (!response.ok) {
-          notification["error"]({
-            message: "Error",
-            description:
-              "There was an error sending your message, please try again later.",
-          });
-        } else {
-          event.target.reset();
-          setFormState(() => ({
-            values: { ...initialValues },
-            errors: { ...initialValues },
-          }));
-
-          notification["success"]({
-            message: "Success",
-            description: "Your message has been sent!",
-          });
-        }
+        notification["success"]({
+          message: "Успешно",
+          description: "Ваше сообщение отправлено!",
+        });
       }
-    } catch (error) {
+    }} catch (error) {
       notification["error"]({
-        message: "Error",
-        description: "Failed to submit form. Please try again later.",
+        message: "Ошибка",
+        description: "Не удалось отправить форму. Пожалуйста, повторите попытку позже.",
       });
     }
   };

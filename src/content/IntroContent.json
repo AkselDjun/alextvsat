@@ -1,13 +1,10 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Ремонт телевизоров в Новогрудке и районе",
+  "text": "Качественная работа с гарантией по доступной цене.",
   "button": [
     {
-      "title": "Explore"
-    },
-    {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Связаться со мной",
+      "scrollTo": "contact"
     }
   ]
 }

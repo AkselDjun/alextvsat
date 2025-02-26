@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
-
+    padding-top: 1rem;
+    
   .ant-row-space-between {
     align-items: center;
     text-align: center;
@@ -18,19 +18,6 @@ export const LogoContainer = styled(Link)`
 export const NavLink = styled("div")`
   display: inline-block;
   text-align: center;
-`;
-
-export const CustomNavLink = styled("div")`
-  width: 203px;
-  display: inline-block;
-
-  @media only screen and (max-width: 411px) {
-    width: 150px;
-  }
-
-  @media only screen and (max-width: 320px) {
-    width: 118px;
-  }
 `;
 
 export const Burger = styled("div")`
@@ -51,13 +38,7 @@ export const NotHidden = styled("div")`
   }
 `;
 
-export const Menu = styled("h5")`
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-`;
-
-export const CustomNavLinkSmall = styled(NavLink)`
+export const CustomNavLinkSmall = styled("div")`
   font-size: 1.2rem;
   color: #18216d;
   transition: color 0.2s ease-in;

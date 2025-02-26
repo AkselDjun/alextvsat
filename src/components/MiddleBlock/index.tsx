@@ -1,42 +1,78 @@
-import { Row, Col } from "antd";
-import { withTranslation, TFunction } from "react-i18next";
+import { Row, Col, Card } from "antd";
 import { Slide } from "react-awesome-reveal";
-import { Button } from "../../common/Button";
-import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+import { MiddleBlockSection } from "./styles";
+import { SvgIcon } from "../../common/SvgIcon";
+import styled from "styled-components";
 
-interface MiddleBlockProps {
-  title: string;
-  content: string;
-  button: string;
-  t: TFunction;
-}
+const StyledCard = styled(Card)`
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+    
+  .ant-card-body {
+    padding: 20px;
+  }
+  .ant-card-meta-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  .ant-card-meta-description {
+    font-size: 14px;
+    color: #555;
+  }
+`;
 
-const MiddleBlock = ({ title, content, button, t }: MiddleBlockProps) => {
-  const scrollTo = (id: string) => {
-    const element = document.getElementById(id) as HTMLDivElement;
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-  return (
-    <MiddleBlockSection>
+
+const data = [
+  {
+    title: "Ремонт ЖК , LED телевизоров",
+    content: "Основную часть ремонтов составляют ЖК и LED телевизоры. Устраняем проблемы с подсветкой, изображением, антенным гнездом, прошивкой и другие неисправности.",
+    icon: 'tv',
+  },
+  {
+    title: "Ремонт кинескопных телевизоров",
+    content: "Кинескопные телевизоры остаются популярными как бюджетный и надежный вариант. Мы профессионально ремонтируем такие модели и другие виды ТВ.",
+    icon: 'old-tv',
+  },
+  {
+    title: "Спутниковое и цифровое телевидение",
+    content: "Ремонт, настройка и установка спутниковых антенн, оборудования для цифрового ТВ, а также ремонт и прошивка тюнеров.",
+    icon: 'satellite',
+  },
+  {
+    title: "Скупка телевизоров на запчасти",
+    content: "Покупаем телевизоры на ЗАПЧАСТИ – жидкокристаллические, плазменные, ЖК, LED, LCD – можно с разбитой матрицей, экраном; залитые водой и другими дефектами.",
+    icon: 'parts',
+  }
+];
+
+const MetaDescription = (description: string) => (
+  <div style={{ lineClamp: 3 }}>{description}</div>
+);
+
+const MiddleBlock = () => (
+    <MiddleBlockSection id="services">
       <Slide direction="up" triggerOnce>
-        <Row justify="center" align="middle">
-          <ContentWrapper>
-            <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{t(title)}</h6>
-              <Content>{t(content)}</Content>
-              {button && (
-                <Button name="submit" onClick={() => scrollTo("mission")}>
-                  {t(button)}
-                </Button>
-              )}
+        <Row justify="space-between" align="middle" gutter={[32, 32]}>
+          {data.map(({ title, content, icon }, index) => (
+            <Col lg={12} md={12} sm={24} xs={24} key={index}>
+              <StyledCard
+                hoverable
+                size="default"
+                cover={<SvgIcon style={{ margin: '5px 0' }} src={`${icon}.svg`} width="150px" height="150px" />}
+              >
+                <Card.Meta style={{ textAlign: "center" }} title={title} description={MetaDescription(content)} />
+              </StyledCard>
             </Col>
-          </ContentWrapper>
+            ))}
         </Row>
       </Slide>
     </MiddleBlockSection>
-  );
-};
+);
 
-export default withTranslation()(MiddleBlock);
+export default MiddleBlock;
