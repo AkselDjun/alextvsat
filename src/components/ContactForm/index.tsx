@@ -114,6 +114,7 @@ const Contact = () => {
                 </List.Item>
               )}
             />
+            <span>ИП Хиневич А.Н, УНП 590656743</span>
           </Slide>
         </Col>
       </Row>

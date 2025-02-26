@@ -30,7 +30,7 @@ const Header = () => {
             key={item.src}
             aria-label={item.src}
           >
-            {item.text}
+            <p style={{ margin: 0 }}>{item.text}</p>
           </a>
         </Row>
       ));

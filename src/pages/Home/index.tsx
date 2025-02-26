@@ -1,6 +1,5 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import AboutContent from "../../content/AboutContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -21,15 +20,17 @@ const Home = () => {
         icon="novogrudok.svg"
         id="intro"
       />
+      <MiddleBlock />
       <ContentBlock
         direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
         icon="people.svg"
         id="about"
       />
-      <MiddleBlock />
+      <ContentBlock
+        direction="right"
+        icon="big-tv.svg"
+        id="defect"
+      />
       <Contact />
     </Container>
   );

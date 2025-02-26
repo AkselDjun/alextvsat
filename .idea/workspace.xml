@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/broken-tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/svg/tv.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/SvgIcon/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/SvgIcon/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactForm/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewsBlock/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ReviewsBlock/styles.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/IntroContent.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/IntroContent.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContentBlock/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContentBlock/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/AboutContent.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +39,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/alextvsat&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/portfolio&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -140,7 +147,9 @@
       <workItem from="1736868572214" duration="796000" />
       <workItem from="1736878508305" duration="4609000" />
       <workItem from="1736956819832" duration="6134000" />
-      <workItem from="1738085729423" duration="9665000" />
+      <workItem from="1738085729423" duration="9724000" />
+      <workItem from="1738605851047" duration="92000" />
+      <workItem from="1740583441628" duration="5954000" />
     </task>
     <servers />
   </component>
