@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11d37b74-d50d-4498-ab8d-9b374c913f1b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/svg/old-tv.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MiddleBlock/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/utils/useForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/utils/useForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,9 @@
       <workItem from="1738085729423" duration="9724000" />
       <workItem from="1738605851047" duration="92000" />
       <workItem from="1740583441628" duration="6261000" />
-      <workItem from="1742060389182" duration="697000" />
+      <workItem from="1742060389182" duration="1086000" />
+      <workItem from="1742062857781" duration="1286000" />
+      <workItem from="1742112994757" duration="871000" />
     </task>
     <servers />
   </component>

