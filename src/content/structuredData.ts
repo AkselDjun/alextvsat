@@ -16,8 +16,6 @@ export const buildStructuredData = () => ({
       "@id": `${siteUrl}/#business`,
       name: `${company.brand} — ремонт телевизоров в Новогрудке`,
       alternateName: company.brand,
-      legalName: company.owner,
-      taxID: company.unp,
       description:
         "Ремонт ЖК, LED и кинескопных телевизоров, установка и настройка спутникового и цифрового ТВ, скупка телевизоров на запчасти в Новогрудке и Новогрудском районе. Бесплатный выезд мастера и диагностика, гарантия на работы.",
       url: `${siteUrl}/`,

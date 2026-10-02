@@ -1,9 +1,9 @@
-import { company, messengers, phones } from "../../content/site";
+import { messengers, phones } from "../../content/site";
 import { useContactForm } from "../../hooks/useContactForm";
 import Icon from "../Icon";
 import Reveal from "../Reveal";
 import { Container, Eyebrow, Section, SubmitButton } from "../Section";
-import { Card, Channel, Channels, Field, Form, Info, Legal, Notice } from "./styles";
+import { Card, Channel, Channels, Field, Form, Info, Notice } from "./styles";
 
 const channels = [
   ...phones.map((p) => ({ href: p.href, icon: p.icon, label: `Телефон ${p.operator}`, value: p.display, external: false })),
@@ -38,9 +38,6 @@ const Contact = () => {
                   </Channel>
                 ))}
               </Channels>
-              <Legal>
-                {company.owner}, УНП {company.unp}
-              </Legal>
             </Info>
             <Form noValidate onSubmit={handleSubmit}>
               <h3>Оставить заявку</h3>

@@ -93,11 +93,6 @@ export const Channel = styled.a`
   }
 `;
 
-export const Legal = styled.p`
-  margin-top: 28px;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-`;
 
 export const Form = styled.form`
   padding: 48px;

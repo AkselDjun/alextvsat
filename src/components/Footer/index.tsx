@@ -127,7 +127,7 @@ const Footer = () => (
       </Top>
       <Bottom>
         <span>
-          © {new Date().getFullYear()} {company.brand}. {company.owner}, УНП {company.unp}
+          © {new Date().getFullYear()} {company.brand}
         </span>
         <span>{company.region}</span>
       </Bottom>

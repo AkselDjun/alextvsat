@@ -4,8 +4,6 @@ export const company = {
   brand: "Alextvsat",
   tagline: "Ремонт телевизоров",
   region: "Новогрудок и район",
-  owner: "ИП Хиневич А.Н.",
-  unp: "590656743",
   city: "Новогрудок",
   district: "Новогрудский район",
   oblast: "Гродненская область",
