@@ -1,13 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
-import ReactDOM from "react-dom";
-import "antd/dist/antd.css";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "@fontsource/manrope/400.css";
+import "@fontsource/manrope/500.css";
+import "@fontsource/manrope/600.css";
+import "@fontsource/manrope/700.css";
+import "@fontsource/manrope/800.css";
+import App from "./App";
 
-import Router from "./router";
-
-const App = () => (
-  <BrowserRouter>
-    <Router />
-  </BrowserRouter>
+createRoot(document.getElementById("root") as HTMLElement).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
-
-ReactDOM.render(<App />, document.getElementById("root"));
