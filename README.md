@@ -11,13 +11,6 @@ npm start
 
 ## Сборка и публикация
 
-Заявки с формы приходят в Telegram. Перед сборкой создайте файл `.env.local` по образцу `.env.example` и укажите токен бота и id чата:
-
-```
-REACT_APP_TELEGRAM_BOT_TOKEN=...
-REACT_APP_TELEGRAM_CHAT_ID=...
-```
-
 Сайт публикуется автоматически через GitHub Actions:
 
 - каждый пуш в `main` выкладывается на основной сайт;
@@ -25,8 +18,7 @@ REACT_APP_TELEGRAM_CHAT_ID=...
 
 Для этого в настройках репозитория (Settings → Secrets and variables → Actions) должны быть секреты:
 
-- `FIREBASE_SERVICE_ACCOUNT` — JSON-ключ сервисного аккаунта Firebase с ролью Firebase Hosting Admin;
-- `REACT_APP_TELEGRAM_BOT_TOKEN` и `REACT_APP_TELEGRAM_CHAT_ID` — для отправки заявок.
+- `FIREBASE_SERVICE_ACCOUNT` — JSON-ключ сервисного аккаунта Firebase с ролью Firebase Hosting Admin.
 
 Ручная публикация:
 
@@ -38,6 +30,12 @@ firebase deploy
 ## Хостинг hoster.by
 
 Сайт заливается на hoster.by вручную: выполнить `npm run build` и загрузить всё содержимое папки `build`, включая скрытый файл `.htaccess`, в корневую папку сайта (`public_html`) через файловый менеджер панели или FTP-клиент. Сам `.htaccess` лежит в `public/` и попадает в `build` при сборке.
+
+### Заявки в Telegram
+
+Форма отправляет заявку на `/api/contact.php`, а уже этот скрипт на сервере пересылает её в Telegram. Токен бота в сборку и в репозиторий не попадает. Он хранится в файле `telegram-config.php` на уровень выше `public_html`, куда нет доступа из браузера. Создайте этот файл один раз по образцу `telegram-config.example.php` и укажите в нём токен бота и id чата.
+
+Скрипт проверяет имя и телефон, отбрасывает ботов по скрытому полю и принимает не больше 5 заявок с одного IP за 10 минут. На Firebase PHP не работает, поэтому форма там не отправляет заявки.
 
 ## Где менять тексты
 

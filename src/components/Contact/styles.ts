@@ -171,3 +171,11 @@ export const Notice = styled.div<{ tone: "success" | "error" }>`
   color: ${(p) => (p.tone === "success" ? "#0f7a3f" : "#b4232a")};
   background: ${(p) => (p.tone === "success" ? "#e7f8ee" : "#fdecec")};
 `;
+
+export const Honeypot = styled.div`
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+`;
