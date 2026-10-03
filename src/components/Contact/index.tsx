@@ -3,7 +3,7 @@ import { useContactForm } from "../../hooks/useContactForm";
 import Icon from "../Icon";
 import Reveal from "../Reveal";
 import { Container, Eyebrow, Section, SubmitButton } from "../Section";
-import { Card, Channel, Channels, Field, Form, Info, Notice } from "./styles";
+import { Card, Channel, Channels, Field, Form, Honeypot, Info, Notice } from "./styles";
 
 const channels = [
   ...phones.map((p) => ({ href: p.href, icon: p.icon, label: `Телефон ${p.operator}`, value: p.display, external: false })),
@@ -77,6 +77,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
               </Field>
+              <Honeypot aria-hidden="true">
+                <input name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
+              </Honeypot>
               {status === "success" && (
                 <Notice tone="success" role="status">
                   <Icon name="check" size={20} strokeWidth={3} />

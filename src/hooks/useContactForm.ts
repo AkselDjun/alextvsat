@@ -13,9 +13,6 @@ type Status = "idle" | "sending" | "success" | "error";
 
 const initialValues: ContactValues = { name: "", phone: "", message: "" };
 
-const botToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
-const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID;
-
 export const normalizePhone = (raw: string) => {
   const digits = raw.replace(/\D/g, "");
   if (/^375\d{9}$/.test(digits)) return `+${digits}`;
@@ -55,12 +52,14 @@ export const useContactForm = () => {
     setErrors(nextErrors);
     if (Object.keys(nextErrors).length > 0) return;
 
+    const website = new FormData(event.currentTarget).get("website") ?? "";
     setStatus("sending");
     try {
-      if (!botToken || !chatId) throw new Error("Telegram is not configured");
-      await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
-        chat_id: chatId,
-        text: `Имя: ${values.name.trim()}\nТелефон: ${normalizePhone(values.phone)}\nСообщение: ${values.message.trim() || "—"}`,
+      await axios.post("/api/contact.php", {
+        name: values.name.trim(),
+        phone: normalizePhone(values.phone),
+        message: values.message.trim(),
+        website,
       });
       setValues(initialValues);
       setStatus("success");
