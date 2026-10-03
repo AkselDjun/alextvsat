@@ -57,7 +57,7 @@ const Hero = () => (
             </FloatIcon>
             <div>
               <strong>Выезд на дом</strong>
-              <small>бесплатно</small>
+              <small>по Новогрудку и району</small>
             </div>
           </FloatCard>
           <Tv>

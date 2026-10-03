@@ -6,11 +6,15 @@ import { Container, Eyebrow, Section, SectionHead } from "../Section";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 
   ${media.tablet} {
     grid-template-columns: repeat(2, 1fr);
+
+    & > :last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
   }
 
   ${media.phone} {
@@ -96,7 +100,7 @@ const Services = () => (
       <SectionHead center>
         <Eyebrow>Услуги</Eyebrow>
         <h2>Ремонт телевизоров и настройка ТВ</h2>
-        <p>Ремонтируем телевизоры любых типов в Новогрудке и районе, настраиваем спутниковое и цифровое ТВ, выкупаем технику на запчасти.</p>
+        <p>Ремонтируем ЖК и LED телевизоры в Новогрудке и районе, настраиваем спутниковое и цифровое ТВ, выкупаем технику на запчасти.</p>
       </SectionHead>
       <Grid>
         {services.map((s, i) => (
