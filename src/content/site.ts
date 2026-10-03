@@ -1,4 +1,4 @@
-export const siteUrl = "https://alextvsat.by";
+export const siteUrl = "https://novotvservice.by";
 
 export const company = {
   brand: "Alextvsat",

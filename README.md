@@ -1,6 +1,6 @@
 # alextvsat
 
-Сайт мастерской по ремонту телевизоров в Новогрудке: [alextvsat.by](https://alextvsat.by).
+Сайт мастерской по ремонту телевизоров в Новогрудке: [novotvservice.by](https://novotvservice.by).
 
 ## Запуск
 

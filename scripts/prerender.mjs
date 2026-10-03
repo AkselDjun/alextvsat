@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const buildDir = path.join(root, "build");
 const cacheDir = path.join(root, "node_modules", ".cache", "prerender");
 const bundle = path.join(cacheDir, "prerender.cjs");
-const siteUrl = "https://alextvsat.by";
+const siteUrl = "https://novotvservice.by";
 
 await mkdir(cacheDir, { recursive: true });
 await build({
