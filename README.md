@@ -35,6 +35,18 @@ npm run build
 firebase deploy
 ```
 
+## Хостинг hoster.by
+
+Каждый пуш в `main` также собирает сайт и заливает папку `build` по FTP на виртуальный хостинг hoster.by. Для этого в Settings → Secrets and variables → Actions нужны секреты:
+
+- `HOSTERBY_FTP_SERVER` — адрес FTP-сервера из панели hoster.by;
+- `HOSTERBY_FTP_USERNAME` — логин FTP;
+- `HOSTERBY_FTP_PASSWORD` — пароль FTP.
+
+Пока `HOSTERBY_FTP_SERVER` не задан, заливка пропускается. На вкладке Variables можно переопределить папку сайта `HOSTERBY_SERVER_DIR` (по умолчанию `./public_html/`), протокол `HOSTERBY_FTP_PROTOCOL` (`ftps` или `ftp`) и порт `HOSTERBY_FTP_PORT`.
+
+Перезалить сайт вручную: Actions → Deploy to hoster.by → Run workflow. Без GitHub: выполнить `npm run build` и загрузить всё содержимое папки `build`, включая `.htaccess`, в корневую папку сайта через файловый менеджер панели или FTP-клиент.
+
 ## Где менять тексты
 
 Все тексты, телефоны и списки услуг лежат в `src/content/site.ts`.
